@@ -101,7 +101,7 @@ img:hover {
 
 .experiences {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto 1fr 0.5fr;
     column-gap:20px;
     list-style-type:none;
 }
