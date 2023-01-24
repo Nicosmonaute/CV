@@ -103,6 +103,7 @@ img:hover {
     display: grid;
     grid-template-columns: auto 1fr 0.5fr;
     column-gap:20px;
+    row-gap: 1em;
     list-style-type:none;
 }
 
