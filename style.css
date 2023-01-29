@@ -3,6 +3,10 @@
     src: url("polices/Ubuntu\ Nerd\ Font\ Complete.ttf");
 }
 
+*:hover {
+    transition:0.4s;
+}
+
 h1 {
     text-align: center;
 }
@@ -19,17 +23,11 @@ section {
 }
 
 a {
-    color: yellow;
+    color: rgb(142, 178, 255);
 }
 
 p {
     text-align: justify;
-}
-
-.competences {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 a:visited {
@@ -37,7 +35,9 @@ a:visited {
 }
 
 a:hover {
-    background-color: blue;
+    background-color:white;
+    transition: 1s;
+    color:rgb(201, 23, 0);
 }
 
 a:active {
@@ -54,8 +54,11 @@ img:hover {
 }
 
 .contacts {
+    display:block;
+    padding:3px;
     word-wrap: break-word;
     text-align: left;
+    border-radius: 3px;
 }
 
 .contacts:hover {
@@ -171,5 +174,74 @@ aside {
         margin-left: 20%;
 
         max-width: 1200px;
+    }
+}
+
+.comp_box {
+    display: block;
+    height: 0.5em;
+    margin-bottom: 0.5em;
+    border: solid white 1px;
+    border-radius: 4px;
+}
+
+.comp_box span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #707ca8, #b2c7ff);
+}
+
+.python {
+    animation: python 2s;
+    width: 70%;
+}
+
+.html {
+    animation: html 3s;
+    width: 50%;
+}
+
+.git {
+    animation: git 3s;
+    width: 75%;
+}
+
+.ocaml {
+    animation: ocaml 3s;
+    width: 40%;
+}
+
+.bash {
+    animation: bash 3s;
+    width: 60%;
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes git {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes ocaml {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes bash {
+    0% {
+        width: 0%;
     }
 }
